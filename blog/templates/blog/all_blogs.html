@@ -1,0 +1,37 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+
+<h1>Mateus' Blogs</h1>
+
+<h2>Mateus has written {{ blogs.count}} blog{{ blogs.count|pluralize}} </h2>
+
+
+{% load static %}
+
+
+<img src="{% static 'portfolio/me1.png' %}" lenght="400" width="300">
+
+
+<br>
+<br>
+
+
+{% for blog in blogs %}
+
+<a href="{% url 'blog_app_name:detail' blog.id %}">
+    <h2>{{ blog.title }}</h2>
+</a>
+
+<p>{{ blog.description|safe|truncatechars:100 }}</p>
+
+
+
+{% if blog.url %}
+<br><a href="{{  blog.url  }}">Link</a>
+{% endif %}
+
+<h5>{{ blog.date|date:'M d Y' }}</h5>
+
+{% endfor %}
+
+{% endblock %}

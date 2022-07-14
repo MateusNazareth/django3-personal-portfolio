@@ -1,0 +1,21 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+
+
+
+{% load static %}
+
+<h2>About this Project</h2>
+<img src="{{ project.image.url }}" class="img-fluid mb-2">
+
+
+
+<h2>{{ project.title }}</h2>
+
+<p>{{ project.description|safe }}</p>
+
+
+
+
+
+{% endblock %}
