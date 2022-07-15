@@ -28,6 +28,8 @@ DEBUG = False
 ALLOWED_HOSTS = ["mateusalves85.pythonanywhere.com"]
 
 
+
+
 # Application definition
 
 INSTALLED_APPS = [
