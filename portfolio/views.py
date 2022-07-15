@@ -12,3 +12,15 @@ def detail2(request, proj_id):
     project = get_object_or_404(Project, pk=proj_id)
 
     return render(request, 'portfolio/detail2.html', {'project': project})
+
+# Projects
+def projeto1(request):
+    return render(request, 'portfolio/projeto1.html')
+
+def projeto2(request):
+    return render(request, 'portfolio/projeto2.html')
+
+def projeto3(request):
+    return render(request, 'portfolio/projeto3.html')
+
+

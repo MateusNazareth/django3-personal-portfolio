@@ -8,6 +8,8 @@ navbar-nav .nav-link {
 
 body {
     font-family: 'Lato', sans-serif;
+
+
 }
 
 #blogtitle {
@@ -21,3 +23,4 @@ body {
     #blogdetailtitle {
         font-size: 5rem;
     }
+
