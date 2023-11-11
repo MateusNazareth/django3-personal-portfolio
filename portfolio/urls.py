@@ -6,7 +6,7 @@ app_name = 'portfolio_app_name'
 urlpatterns = [
 
     path('<int:proj_id>/', views.detail2, name='detail2'),
-
+   
 ]
 
     # path('projeto1', views.projeto1, name='projeto1'),

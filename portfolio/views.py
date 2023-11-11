@@ -11,8 +11,19 @@ def home(request):
 def detail2(request, proj_id):
 
     project = get_object_or_404(Project, pk=proj_id)
+    if proj_id == 1:
+        projeto = 'portfolio/projeto1.html'
 
-    return render(request, 'portfolio/detail2.html', {'project': project})
+    elif proj_id == 2:
+        projeto = 'portfolio/projeto2.html'
+
+    elif proj_id == 3:
+        projeto = 'portfolio/projeto3.html'
+
+    elif proj_id == 2:
+        projeto = 'portfolio/projeto3.html'
+  
+    return render(request, projeto, {'project': project})
 
 # Projects
 # def projeto1(request):

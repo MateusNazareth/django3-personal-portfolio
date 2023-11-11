@@ -3,21 +3,20 @@ body {
 
     background-color: #dddddd;
     color: #000000;
-    text-align: left;
+    text-align: center;
     text-justify: auto;
-    margin-right: 19%;
-    margin-left: 10%;
-
+    margin-right: 30%;
+    margin-left: 30%;
 
 }
-img{
-    height: 70vh;
-    width: 70vw;
-}
 
-div{
+
+
+div {
     font-size: larger;
- ;
+    text-align: center;
+ 
 }
+
 
 
